@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 三個頁面 -->
+    <div id="p1">Page 1</div>
+    <div id="p2" style="display:none;">Page 2</div>
+    <div id="p3" style="display:none;">Page 3</div>
+
+    <!-- 四個按鈕 -->
+    <button onclick="changeToPage(2)">下一步</button> 
+    <button onclick="changeToPage(1)" style="display:none;">上一步</button> 
+    <button onclick="changeToPage(3)" style="display:none;">下一步</button> 
+    <button onclick="changeToPage(2)" style="display:none;">上一步</button> 
+
+    <script>
+        function changeToPage(pageNum) {
+            // 先把三個頁面都藏起來
+            p1.style.display = "none";
+            p2.style.display = "none";
+            p3.style.display = "none";
+
+            // 把指定的頁面打開
+            document.getElementById("p" + pageNum).style.display = "block";
+
+            // 先把四個按鈕都藏起來
+            const buttons = document.querySelectorAll("button");
+            buttons.forEach(btn => btn.style.display = "none");
+
+            // 根據目前在哪一頁，決定要開哪些按鈕
+            if (pageNum == 1) {
+                buttons[0].style.display = "inline-block"; // 顯示「p1的下一步」
+            } else if (pageNum == 2) {
+                buttons[1].style.display = "inline-block"; // 顯示「p2的上一步」
+                buttons[2].style.display = "inline-block"; // 顯示「p2的下一步」
+            } else if (pageNum == 3) {
+                buttons[3].style.display = "inline-block"; // 顯示「p3的上一步」
+            }
+        }
+    </script>
+</body>
+</html>
