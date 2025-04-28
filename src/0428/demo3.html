@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            cursor: pointer;
+        }
+        span:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML DOM 分頁效果 -->
+     <div>
+        <span onclick="changeToAbout();">ABOUT</span>
+        <span onclick="changeToNews();">NEWS</span>
+     </div>
+     <hr>
+     <div id="about">大家好，我是阿JO🏃‍♀️💨</div>
+     <div id="news" style="display: none;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum dignissimos sed! Ratione nulla, dicta in quas necessitatibus quia fugiat soluta ipsa! Dolorum, odio. Quisquam sunt perferendis recusandae cumque corrupti.
+     </div>
+
+     <script>
+        function changeToAbout(){
+            // 顯示about
+            let about=document.querySelector("#about");
+            about.style.display="block";
+
+            // 隱藏news
+            let news=document.querySelector("#news");
+            news.style.display="none";
+        }
+        function changeToNews(){
+            // 隱藏about
+            let about=document.querySelector("#about");
+            about.style.display="none";
+
+            // 顯示news
+            let news=document.querySelector("#news");
+            news.style.display="block";
+        }
+     </script>
+</body>
+</html>
