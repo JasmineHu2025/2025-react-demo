@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="p1">page1</div>
+    <div id="p2" style="display: none;">page2</div>
+    <div id="p3" style="display: none;">page3</div>
+
+    <button id="btn1" onclick="changeToP(2);">下一步</button>
+    <button id="btn2" onclick="changeToP(1);" style="display: none;">上一步</button>
+    <button id="btn3" onclick="changeToP(3);" style="display: none;">下一步</button>
+    <button id="btn4" onclick="changeToP(2);" style="display: none;">上一步</button>
+
+
+    <script>
+        function changeToP(num) {
+            // 預設為全部隱藏
+            document.querySelector("#p1").style.display = "none";
+            document.querySelector("#p2").style.display = "none";
+            document.querySelector("#p3").style.display = "none";
+
+            document.querySelector("#btn1").style.display = "none";
+            document.querySelector("#btn2").style.display = "none";
+            document.querySelector("#btn3").style.display = "none";
+            document.querySelector("#btn4").style.display = "none";
+
+            // 再依參數各別打開
+            if (num === 1) {
+                // 表示在第一頁，顯示下一步(btn1)
+                document.querySelector("#p1").style.display = "block";
+                document.querySelector("#btn1").style.display = "block";
+            }
+            
+            if (num === 2) {
+                // 表示在第二頁，顯示上一步(btn2)與下一步(btn3)
+                document.querySelector("#p2").style.display = "block";
+                document.querySelector("#btn2").style.display = "block";
+                document.querySelector("#btn3").style.display = "block";
+            }
+
+            if (num === 3) {
+                // 表示在第三頁，顯示上一步(btn4)
+                document.querySelector("#p3").style.display = "block";
+                document.querySelector("#btn4").style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
