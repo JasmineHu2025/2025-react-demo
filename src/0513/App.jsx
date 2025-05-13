@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-
 import $ from 'jquery';
 import './App.css';
 
@@ -44,14 +43,17 @@ function App() {
         <>
             <h2>ToolTip顯示說明</h2>
             <p>
-                Lorem, ipsum dolor sit amet
+                ToolTip浮動顯示文字
                 <a href="#">
-                    consectetur
+                    顯示文字
                     <span className="ttpShow">consectetur內容說明...</span>
                 </a>
-                consectetur adipisicing elit. Inventore, quasi omnis iusto  
+            </p>
+
+            <p>
+                ToolTip浮動顯示圖片  
                 <a href="#">
-                    earecusandaequam
+                    顯示圖片
                     <span className="ttpShow">
                         <img src="./img0429/2.jpg" alt="" style={{width:'100px'}} />
                         <p>
@@ -59,7 +61,6 @@ function App() {
                         </p>
                     </span>
                 </a>
-                 dolorem nulla eius provident, temporibus possimus? Quae, doloribus iusto. Libero sunt consequuntur id ea fugiat repellat quasi deserunt inventore veritatis temporibus dolores ex voluptatibus eos, consequatur assumenda facilis accusamus dicta! Enim nostrum cumque sapiente ullam minima voluptatibus ipsum dolore non esse delectus quibusdam voluptatum error expedita aut ipsam nisi ea, asperiores consequatur quae. Et ullam perferendis tempora ab voluptatibus illum deserunt ipsam, cupiditate dolorem dignissimos saepe blanditiis repellat architecto maxime minus accusamus commodi consequatur minima illo delectus neque aperiam ipsum? Dignissimos vero, minus quos officiis ipsam delectus ullam placeat maiores nemo consequuntur exercitationem iure nam ipsum illum enim asperiores eius? Sequi unde harum reiciendis accusantium explicabo accusamus enim ex ea dicta eligendi adipisci ipsa reprehenderit, sit, aliquam amet! Repudiandae ipsam eos, maiores eum doloribus debitis tempora doloremque minus dolore numquam placeat molestias, laboriosam rerum officia vel praesentium quos laudantium quas blanditiis nemo laborum? At distinctio expedita eveniet neque delectus quis officia consectetur? Aspernatur error quidem, minus omnis minima modi eaque totam debitis, optio, laudantium nemo doloribus? Accusantium corrupti, distinctio perferendis tempore nostrum corporis aliquid adipisci, maiores veniam necessitatibus illum sequi eos ullam autem ipsam explicabo laborum. Blanditiis saepe, molestias facere obcaecati quibusdam sit quam consectetur quos cum, suscipit laudantium id ratione at, quisquam doloremque quia nulla. Quae eos facere facilis suscipit rerum. Quidem deserunt perferendis ullam facere repellendus iste dolores ut? Quo sint accusantium beatae fuga maiores dignissimos consequatur expedita quod excepturi nobis? Delectus, quidem similique reiciendis distinctio illo quod corporis soluta, iusto consequatur repellendus ut hic obcaecati facilis dolorem dolorum tempore voluptate tempora consectetur dolor consequuntur at? Fugit minima tempora quis laboriosam ea eligendi perferendis deserunt possimus? At natus sequi praesentium ad ducimus dicta, itaque commodi voluptates aspernatur repudiandae deserunt sint ab quas cumque sapiente voluptatibus. Consectetur quaerat iure cumque architecto quae adipisci quis nisi, voluptatem sapiente eligendi beatae mollitia. Sunt cupiditate voluptate magnam id iure? Blanditiis accusamus ipsa ad. Eligendi sequi, cupiditate exercitationem at sint quod explicabo. Nam eligendi mollitia totam ut natus commodi magnam impedit officiis doloremque facere dolorum, quos, vitae quisquam, harum sapiente dignissimos quia deleniti. Ut, amet? Dolorem, ad! Accusantium eos deleniti nesciunt explicabo incidunt beatae eveniet nulla repellendus dolor praesentium! Eaque modi cupiditate impedit ab consectetur, in nihil possimus illum labore nam repudiandae. Fugiat sequi earum fuga repudiandae. Optio ducimus beatae soluta iusto perspiciatis ipsa consequatur quam? Quas ex at labore et eum tempora dicta obcaecati consectetur voluptatem expedita, consequatur excepturi praesentium explicabo voluptates. Deleniti quasi, laborum consequuntur animi neque non numquam. Similique accusamus asperiores quidem architecto in. Eveniet provident, velit voluptatum sapiente ratione officia est porro molestias ipsum officiis deserunt voluptas ut. Error repellat quasi dolorum et odit, totam porro dolore, ratione, sapiente quaerat perferendis quae esse architecto quam ex. Porro omnis iste voluptate quia alias expedita aliquam quam sequi ad temporibus voluptas et consequatur, explicabo repellat, quas cum quis vel distinctio perspiciatis? Similique, voluptates temporibus aliquid unde molestias saepe! Minima inventore quae voluptas, eos illo nulla error.
             </p>
         </>
     )
